@@ -12,7 +12,7 @@ function connectWs() {
         const msg = JSON.parse(ev.data);
         if (msg.type === 'ticks') {
             const ticks = msg.data;
-            // take first tick and update series
+            // take first tick and update seriesssssssssssg
             if (ticks && ticks.length) {
                 const t = Math.floor(ticks[0].timestamp / 1000);
                 const p =
