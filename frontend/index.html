@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mini Zerodha Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Lightweight charts CDN -->
+<script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Mini Zerodha Dashboard</h1>
+<div id="controls">
+<input id="symbol" value="NSE:RELIANCE" />
+<button id="btn-get-ltp">Get LTP</button>
+<button id="btn-connect-ws">Connect Live</button>
+</div>
+</header>
+
+
+<main>
+<section id="chart-area">
+<div id="chart" style="height: 400px;"></div>
+</section>
+
+
+<section id="info">
+<h3>Latest</h3>
+<pre id="ltp">-</pre>
+<div id="orders">
+<h4>Place Order</h4>
+<input id="order-symbol" placeholder="RELIANCE" />
+<input id="order-qty" type="number" value="1" />
+<button id="buy">BUY</button>
+<button id="sell">SELL</button>
+</div>
+</section>
+</main>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>

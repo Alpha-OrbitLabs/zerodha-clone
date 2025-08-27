@@ -1,0 +1,12 @@
+body { font-family: Inter, system-ui, Arial; background:#f8fafc; color:#111827; margin:0; }
+.container { max-width:1100px; margin:20px auto; padding:16px; }
+header { display:flex; justify-content:space-between; align-items:center; }
+#controls input { padding:6px 8px; margin-right:8px; }
+main { display:flex; gap:16px; margin-top:12px; }
+#chart-area { flex:1; background:white; border-radius:8px; padding:8px; box-shadow:0 2px 6px rgba(0,0,0,0.06); }
+#info { width:320px; }
+pre#ltp { background:#111827; color:#f8fafc; padding:12px; border-radius:6px; }
+#orders input { display:block; margin-bottom:8px; padding:6px 8px; width:100%; }
+button { padding:8px 10px; border-radius:6px; border:none; cursor:pointer; }
+button#buy { background:#10b981; color:white; }
+button#sell { background:#ef4444; color:white; }
